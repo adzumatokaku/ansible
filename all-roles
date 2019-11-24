@@ -1,0 +1,6 @@
+- src: https://github.com/adzumatokaku/docker-role.git
+  name: docker-role
+- src: https://github.com/adzumatokaku/webapp-role.git
+  name: webapp-role
+- src: https://github.com/adzumatokaku/nginx-role.git
+  name: nginx-role
