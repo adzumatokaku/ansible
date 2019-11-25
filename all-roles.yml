@@ -1,6 +1,8 @@
-- src: https://github.com/adzumatokaku/docker-role.git
-  name: docker-role
-- src: https://github.com/adzumatokaku/webapp-role.git
-  name: webapp-role
-- src: https://github.com/adzumatokaku/nginx-role.git
-  name: nginx-role
+- src: docker-role
+  version: v1.0 
+- src: webapp-role
+  version: v1.0 
+- src: nginx-role
+  version: v1.0 
+
+
