@@ -1,8 +1,8 @@
-- src: docker-role
+- src: adzumatokaku.docker_role
   version: v1.0 
-- src: webapp-role
+- src: adzumatokaku.webapp_role
   version: v1.0 
-- src: nginx-role
+- src: adzumatokaku.nginx_role
   version: v1.0 
 
 
