@@ -2,15 +2,16 @@
 
 - name: install pip
   hosts: ubuntu
-  yum: 
-    name:
-      - epel-release
-      - python-pip
-
-- name: create dir for nginx
-  file:
-    path: /var/local/nginx/
-    state: directory
+  tasks:
+  - name: install pip
+    yum: 
+      name:
+        - epel-release
+        - python-pip
+  - name: create dir for nginx
+    file:
+      path: /var/local/nginx/
+      state: directory
  
 - hosts: ubuntu
   roles:
