@@ -1,6 +1,6 @@
 ---
 
-- hosts: centOS
+- hosts: ubuntu
   vars:
     statuscode:
   tasks:
@@ -11,5 +11,5 @@
       register: statuscode
     - debug:
         var: statuscode.status
-    - name: sleep (for jenkins correct output of above debug msg)
+    - name: sleep
       shell: "sleep 5"
