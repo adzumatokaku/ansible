@@ -15,8 +15,8 @@
  
 - hosts: ubuntu
   roles:
-    - docker-role
-    - webapp-role
-    - nginx-role
+    - adzumatokaku.docker_role
+    - adzumatokaku.webapp_role
+    - adzumatokaku.nginx_role
 
 
