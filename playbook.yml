@@ -1,0 +1,9 @@
+---
+
+- hosts: centOS
+  roles:
+    - docker-role
+    - webapp-role
+    - nginx-role
+
+
