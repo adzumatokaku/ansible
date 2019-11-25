@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    options {
+        timestamps()
+    }
+    stages {
+        stage("Deploy") {
+            steps {
+                sh """
+                mkdir -p roles
+                ansible-galaxy install -p roles -r all-roles.yml
+                """
+                ansiblePlaybook(playbook: 'playbook.yml', inventory: 'inventory', vaultCredentialsId: 'ansible-vault-key')
+            }         
+        }
+        stage("Test") {
+            steps {
+                ansiblePlaybook(playbook: 'test.yml', inventory: 'inventory')
+            }          
+        }        
+    }
+}
